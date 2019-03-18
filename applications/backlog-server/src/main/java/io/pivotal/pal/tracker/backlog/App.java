@@ -12,7 +12,8 @@ import org.springframework.web.client.RestOperations;
 import java.util.TimeZone;
 
 
-@SpringCloudApplication
+@SpringBootApplication
+@EnableEurekaClient
 @ComponentScan({"io.pivotal.pal.tracker.backlog", "io.pivotal.pal.tracker.restsupport"})
 public class App {
 
